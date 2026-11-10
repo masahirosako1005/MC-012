@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>MataTabi お知らせ編集</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="admin-body">
+  <!-- 背景画像は人物や既存作品を参照しない、オリジナルの海辺の町。 -->
+  <div class="skyline" aria-hidden="true">
+    <img src="img/town.jpg" alt="">
+    <div class="skyline-shade"></div>
+  </div>
+  <div class="phone" id="phone">
+    <header class="topbar">
+      <h1>MataTabi</h1>
+      <p class="admin-mark">担当ログイン</p>
+    </header>
+    <main id="app"></main>
+  </div>
+  <script src="js/catalog.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

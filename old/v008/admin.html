@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>MataTabi お知らせ編集</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="admin-body">
+  <!-- 背景画像は人物や既存作品を参照しない、オリジナルの海辺の町。 -->
+  <div class="skyline" aria-hidden="true">
+    <img src="img/town.jpg" alt="">
+    <div class="skyline-shade"></div>
+  </div>
+  <div class="phone" id="phone">
+    <header class="topbar">
+      <h1>MataTabi</h1>
+      <p class="admin-mark" id="admin-mark">担当ログイン</p>
+    </header>
+    <main id="app"></main>
+    <nav class="bottom-nav admin-nav" id="nav" hidden aria-label="管理メニュー">
+      <button type="button" data-route="create">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M12 8v8M8 12h8"/></svg>
+        <span>新規作成</span>
+      </button>
+      <button type="button" data-route="edit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5 14 5 4 15z"/><path d="M13 6l4 4"/></svg>
+        <span>編集</span>
+      </button>
+      <button type="button" data-route="list">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h10v14H6z"/><path d="M16 8h3v8a2 2 0 0 1-2 2h-1"/><path d="M8 9h6M8 12h6M8 15h4"/></svg>
+        <span>お知らせ</span>
+      </button>
+    </nav>
+  </div>
+  <script src="js/catalog.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

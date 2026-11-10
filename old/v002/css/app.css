@@ -1,0 +1,135 @@
+/* 海と桜の全面背景の上に、すりガラスのカードを置く。 */
+:root {
+  color-scheme: light;
+  --ink: #1c3348;
+  --muted: #3e5a72;
+  --line: rgba(255, 255, 255, 0.72);
+  --glass: rgba(255, 255, 255, 0.46);
+  --shadow: 0 10px 28px rgba(28, 51, 72, 0.16);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Yu Gothic UI", "Hiragino Sans", "Meiryo", sans-serif;
+  color: var(--ink);
+  background: #7eb6ef url("../img/landscape.svg") center / cover no-repeat fixed;
+}
+
+button, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  box-shadow: 0 4px 12px rgba(28, 51, 72, 0.08);
+  cursor: pointer;
+}
+
+button[aria-current="page"],
+button.is-selected {
+  background: #1c3348;
+  color: #fff;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1c3348;
+  outline-offset: 2px;
+}
+
+.shell {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 1.2rem 1rem 11rem;
+}
+
+.hero h1 {
+  margin: 0.2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.hero p,
+.lede {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 1.1rem 1.15rem 1.2rem;
+}
+
+.stack { display: grid; gap: 0.9rem; }
+.row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+
+.switch { margin-top: 1rem; }
+
+.card h2,
+.card h3 { margin: 0 0 0.35rem; font-weight: 600; }
+
+.meta {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.meta strong { color: var(--ink); font-weight: 600; }
+
+label { display: grid; gap: 0.25rem; font-size: 0.92rem; }
+
+select {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(28, 51, 72, 0.16);
+  border-radius: 14px;
+  padding: 0.55rem 0.7rem;
+}
+
+.notice {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0.7rem;
+  transform: translateX(-50%);
+  width: min(820px, calc(100% - 1rem));
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.4rem;
+  padding: 0.45rem;
+  border-radius: 24px;
+}
+
+.nav button {
+  padding: 0.65rem 0.2rem;
+  font-size: 0.82rem;
+}
+
+.check { grid-template-columns: auto 1fr; align-items: center; }
+
+@media (max-width: 720px) {
+  .hero h1 { font-size: 1.7rem; }
+  .nav { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  body { background-attachment: scroll; }
+}

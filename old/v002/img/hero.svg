@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Coastal town, cherry blossoms, and a traveler">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#75c7f5"/>
+      <stop offset=".58" stop-color="#caebfb"/>
+      <stop offset="1" stop-color="#fff1df"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#63c4dd"/>
+      <stop offset="1" stop-color="#147aaf"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5eadb"/>
+      <stop offset="1" stop-color="#bba994"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".88">
+    <ellipse cx="235" cy="104" rx="150" ry="35"/>
+    <ellipse cx="370" cy="120" rx="105" ry="29"/>
+    <ellipse cx="720" cy="76" rx="120" ry="27"/>
+  </g>
+  <path d="M0 350 C170 265 300 365 430 300 C560 235 680 330 815 284 C950 238 1060 275 1200 240 L1200 510 L0 510Z" fill="#5b9b91" opacity=".9"/>
+  <path d="M0 382 C230 324 420 418 620 362 C830 304 1010 350 1200 302 L1200 640 L0 640Z" fill="url(#sea)"/>
+  <path d="M0 490 C205 455 345 515 500 472 C710 415 900 492 1200 410 L1200 720 L0 720Z" fill="#e9f5f5" opacity=".25"/>
+  <g fill="#f6f2e8" stroke="#b7c8c7" stroke-width="3">
+    <path d="M80 430h126v86H80z"/>
+    <path d="M235 397h112v100H235z"/>
+    <path d="M382 430h134v88H382z"/>
+    <path d="M545 394h105v105H545z"/>
+  </g>
+  <g fill="#4d7491">
+    <path d="M68 432l76-53 76 53z"/>
+    <path d="M220 399l72-52 72 52z"/>
+    <path d="M367 432l82-58 82 58z"/>
+    <path d="M528 396l70-50 70 50z"/>
+  </g>
+  <path d="M0 590 C255 520 495 585 720 493 L850 720 H0Z" fill="url(#path)"/>
+  <path d="M0 570 C250 512 470 558 690 478" fill="none" stroke="#ffffff" stroke-width="8" opacity=".5"/>
+  <g stroke="#3d655c" stroke-width="14" stroke-linecap="round">
+    <path d="M75 470V160M240 445V128M1010 410V115M1130 420V160"/>
+  </g>
+  <g fill="#f5b8c9">
+    <circle cx="55" cy="170" r="68"/><circle cx="118" cy="128" r="54"/><circle cx="185" cy="180" r="60"/>
+    <circle cx="245" cy="112" r="73"/><circle cx="315" cy="172" r="52"/>
+    <circle cx="975" cy="125" r="65"/><circle cx="1040" cy="82" r="55"/><circle cx="1112" cy="140" r="68"/><circle cx="1180" cy="96" r="58"/>
+  </g>
+  <g fill="#fff" opacity=".7">
+    <circle cx="365" cy="174" r="8"/><circle cx="395" cy="220" r="6"/><circle cx="925" cy="210" r="7"/><circle cx="860" cy="160" r="6"/>
+  </g>
+  <!-- Original traveler illustration; no third-party character reference. -->
+  <g transform="translate(760 180)">
+    <path d="M182 92 C188 22 292 8 329 76 C365 142 311 195 252 185 C196 176 170 143 182 92Z" fill="#274a67"/>
+    <circle cx="256" cy="100" r="61" fill="#ffe0cc"/>
+    <path d="M199 97 C207 23 300 22 328 78 C303 65 277 48 236 58 C225 78 214 91 199 97Z" fill="#274a67"/>
+    <path d="M218 105c12 0 12 14 0 14M277 105c12 0 12 14 0 14" fill="none" stroke="#35506a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M244 137c13 10 27 10 40-2" fill="none" stroke="#bf6b73" stroke-width="5" stroke-linecap="round"/>
+    <path d="M173 210 C218 170 309 171 351 222 L397 471 L144 471Z" fill="#f9fbff"/>
+    <path d="M157 230 C196 207 238 197 276 205 L256 471 H144Z" fill="#e8f3fb"/>
+    <path d="M315 214 C352 222 374 254 388 301 L337 318 L294 239Z" fill="#ffffff"/>
+    <path d="M357 299 C419 320 454 363 486 414 C499 435 471 453 454 434 C421 397 388 365 333 338Z" fill="#ffe0cc"/>
+    <path d="M183 204 C154 244 146 312 146 386" fill="none" stroke="#35506a" stroke-width="18" stroke-linecap="round"/>
+    <path d="M333 207 C370 252 376 330 373 409" fill="none" stroke="#35506a" stroke-width="18" stroke-linecap="round"/>
+    <path d="M149 376h87v96h-96z" fill="#315675"/>
+  </g>
+  <g fill="#f5b8c9" opacity=".85" filter="url(#soft)">
+    <circle cx="690" cy="100" r="24"/><circle cx="720" cy="130" r="19"/><circle cx="660" cy="142" r="18"/>
+  </g>
+</svg>

@@ -1,0 +1,434 @@
+/* MataTabi v003。背景の上に、白基調のすりガラスと白ボタンを置く。 */
+:root {
+  color-scheme: light;
+  --ink: #085090;
+  --muted: #4d7494;
+  --line: rgba(8, 80, 144, 0.14);
+  --glass: rgba(255, 255, 255, 0.82);
+  --glass-solid: rgba(255, 255, 255, 0.94);
+  --shadow: 0 10px 24px rgba(8, 80, 144, 0.12);
+  --nav-space: calc(108px + env(safe-area-inset-bottom));
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Yu Gothic UI", "Hiragino Sans", "Meiryo", sans-serif;
+  color: var(--ink);
+  background: #90d0ff;
+}
+
+button, select { font: inherit; color: inherit; }
+
+button {
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(8, 80, 144, 0.45);
+  outline-offset: 2px;
+}
+
+/* 街並みは画面いっぱいに固定する。画像の差し替えは index.html の town.svg。 */
+.skyline {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: #90d0ff;
+}
+
+.skyline img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* 空の明るさを残しつつ、下部の文字が沈まない程度に藍を重ねる。 */
+.skyline-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8, 80, 144, 0.22) 0%, rgba(240, 255, 255, 0.05) 30%, rgba(8, 80, 144, 0.28) 100%);
+  pointer-events: none;
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.topbar {
+  position: sticky;
+  z-index: 20;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+  margin: 12px 16px 0;
+  padding: 0 12px 0 16px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.icon-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(8, 80, 144, 0.12);
+}
+
+.icon-button.has-notice::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.notice-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 12px;
+  width: min(300px, calc(100% - 24px));
+}
+
+main {
+  padding: 16px 16px var(--nav-space);
+}
+
+.page {
+  display: grid;
+  gap: 14px;
+}
+
+.home-page { padding-top: 8px; }
+
+.glass {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .topbar,
+  .bottom-nav {
+    background: var(--glass-solid);
+  }
+}
+
+.home-card,
+.panel,
+.edit-card,
+.notice-card,
+.modal-card { padding: 14px; }
+
+.thumb-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.thumb-row .subtle { grid-column: 1 / -1; }
+
+.thumb-button,
+.summary {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 0 0 6px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(8, 80, 144, 0.08);
+  text-align: left;
+}
+
+.thumb-button img,
+.summary img,
+.modal-photo,
+.thumb-fallback {
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+  background: #d9f3ff;
+}
+
+.thumb-fallback {
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.thumb-caption,
+.summary-copy {
+  padding: 0 6px;
+  color: var(--ink);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  max-height: 2.7em;
+  overflow: hidden;
+}
+
+.summary {
+  grid-template-columns: 96px 1fr;
+  align-items: center;
+  min-height: 84px;
+  padding-right: 8px;
+}
+
+.summary img,
+.summary .thumb-fallback { height: 84px; }
+
+.summary-copy { font-size: 0.92rem; max-height: none; }
+
+.summary-copy strong,
+.summary-copy span { display: block; }
+
+.summary-copy span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.white-button,
+.segmented button,
+.season-row button {
+  min-height: 48px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(8, 80, 144, 0.14);
+}
+
+.white-button { width: 100%; margin-top: 12px; padding: 0 16px; }
+
+.segmented button.is-selected,
+.season-row button.is-selected {
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.edit-card.is-chosen {
+  box-shadow: var(--shadow), inset 0 0 0 1.5px var(--ink);
+}
+
+h2, h3, .page-title { margin: 0; font-size: 1.15rem; }
+
+h3 { font-size: 1.02rem; }
+
+.check input { width: 1.25rem; height: 1.25rem; }
+
+.subtle { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.55; }
+
+.detail { margin: 8px 0 0; line-height: 1.6; }
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.season-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.field { display: grid; gap: 6px; font-size: 0.82rem; }
+
+.field select,
+.select-grid select {
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.history-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.history-row .summary { grid-template-columns: 84px 1fr; }
+
+.text-button {
+  min-height: 48px;
+  min-width: 64px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(8, 80, 144, 0.14);
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 10px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.modal-photo { height: 160px; border-radius: 16px; }
+
+/* モーダルは下部ナビの上に浮かぶ。お知らせだけはヘッダーの直下に出す。 */
+.modal-back {
+  position: fixed;
+  z-index: 25;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: calc(96px + env(safe-area-inset-bottom));
+  display: grid;
+  place-items: center;
+  padding: 20px 16px;
+  background: rgba(8, 80, 144, 0.12);
+  animation: modal-fade 0.4s ease;
+}
+
+.modal-back.is-notice {
+  top: 82px;
+  place-items: start center;
+  padding-top: 12px;
+}
+
+.modal-card {
+  width: min(100%, 420px);
+  max-height: 100%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  animation: modal-rise 0.4s cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(42px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-back,
+  .modal-card { animation: none; }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .modal-card { background: rgba(255, 255, 255, 0.92); }
+}
+
+.empty { padding: 16px; }
+
+.bottom-nav {
+  position: fixed;
+  z-index: 30;
+  left: 50%;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: min(calc(100% - 32px), 488px);
+  min-height: 68px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 56px;
+  border-radius: 16px;
+  background: transparent;
+  color: #5d7f99;
+  font-size: 0.72rem;
+  box-shadow: none;
+}
+
+.bottom-nav button[aria-current="page"] {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.bottom-nav svg,
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

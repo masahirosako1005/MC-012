@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "synthetic": true,
+    "note": "動作確認用の匿名合成口コミ。実在の投稿ではない。"
+  },
+  "reviews": [
+    { "spotId": "shio", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "桜と水平線が重なる午前が静かでした。ベンチで十分休めます。", "createdAt": "2026-04-02T09:10:00.000Z" },
+    { "spotId": "shio", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "バス1本で着き、段差も少なかったです。朝のうちが空いています。", "createdAt": "2026-04-08T08:40:00.000Z" },
+    { "spotId": "shio", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "塩レモンが風に合っていました。昼は人が増えるので早めが楽です。", "createdAt": "2026-07-11T12:20:00.000Z" },
+    { "spotId": "shio", "season": "summer", "satisfaction": 3, "revisitIntent": false, "body": "景色は良いですが、風が強くて長くは座れませんでした。", "createdAt": "2026-08-03T13:05:00.000Z" },
+    { "spotId": "shio", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "夕景の語り部が短く、港の話が分かりやすかったです。", "createdAt": "2026-10-12T16:40:00.000Z" },
+    { "spotId": "shio", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "夕方は混みますが、展望台の端は座れました。", "createdAt": "2026-10-19T17:10:00.000Z" },
+    { "spotId": "shio", "season": "winter", "satisfaction": 5, "revisitIntent": true, "body": "空気が澄んで島の線が近く見えました。室内待合は小さいです。", "createdAt": "2026-01-14T10:00:00.000Z" },
+    { "spotId": "shio", "season": "winter", "satisfaction": 4, "revisitIntent": true, "body": "バスの本数は少ないですが、空いていてゆっくり見れます。", "createdAt": "2026-02-02T11:15:00.000Z" },
+
+    { "spotId": "todai", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "灯台守の朝の案内が短くて分かりやすいです。麓の茶屋で休めます。", "createdAt": "2026-04-05T08:20:00.000Z" },
+    { "spotId": "todai", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "船のあと階段が多いので、時間に余裕を見た方がいいです。", "createdAt": "2026-04-21T09:00:00.000Z" },
+    { "spotId": "todai", "season": "summer", "satisfaction": 5, "revisitIntent": true, "body": "入道雲の下の海が白く、途中の踊り場で休めました。", "createdAt": "2026-08-20T14:00:00.000Z" },
+    { "spotId": "todai", "season": "summer", "satisfaction": 3, "revisitIntent": false, "body": "午後は混み、階段が長く感じました。午前の方が楽です。", "createdAt": "2026-07-28T15:10:00.000Z" },
+    { "spotId": "todai", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "麓の焼き魚が熱々で、灯台の往復のあとにちょうどよい量でした。", "createdAt": "2026-10-09T12:30:00.000Z" },
+    { "spotId": "todai", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "所要は長めですが、茶屋で休憩できるので助かります。", "createdAt": "2026-11-02T12:50:00.000Z" },
+    { "spotId": "todai", "season": "winter", "satisfaction": 4, "revisitIntent": true, "body": "風は強いですが、灯台の光が早くて印象に残りました。", "createdAt": "2026-01-20T16:15:00.000Z" },
+    { "spotId": "todai", "season": "winter", "satisfaction": 3, "revisitIntent": false, "body": "船の便が少なく、茶屋の営業が短かったです。", "createdAt": "2026-02-11T15:40:00.000Z" },
+
+    { "spotId": "yoichi", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "桜餅の屋台が近く、夕方早めなら席がありました。", "createdAt": "2026-04-03T17:00:00.000Z" },
+    { "spotId": "yoichi", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "看板犬の子犬を店先で見られました。触れ合いは店員の案内どおりに。", "createdAt": "2026-04-10T10:20:00.000Z" },
+    { "spotId": "yoichi", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "日が長く、灯りがにじむ時間がきれいです。夜は混みます。", "createdAt": "2026-07-16T19:30:00.000Z" },
+    { "spotId": "yoichi", "season": "summer", "satisfaction": 3, "revisitIntent": false, "body": "屋台の席は平坦ですが、夜は人が多くて歩きにくいです。", "createdAt": "2026-08-08T20:10:00.000Z" },
+    { "spotId": "yoichi", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "栗の屋台が通りの中央にあり、短い距離で何軒か試せました。", "createdAt": "2026-10-13T17:20:00.000Z" },
+    { "spotId": "yoichi", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "夕方は混みますが、並ばずに食べられる時間帯もあります。", "createdAt": "2026-10-25T16:50:00.000Z" },
+    { "spotId": "yoichi", "season": "winter", "satisfaction": 5, "revisitIntent": true, "body": "冬至の夜市は屋内の席があり、空いていてゆっくり座れました。", "createdAt": "2026-12-22T18:40:00.000Z" },
+    { "spotId": "yoichi", "season": "winter", "satisfaction": 4, "revisitIntent": true, "body": "店主が出す一杯が小さく、寒くない場所で飲めます。", "createdAt": "2026-12-23T19:00:00.000Z" },
+
+    { "spotId": "mizu", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "湖面に桜が落ちる午前が空いていました。東屋で休めます。", "createdAt": "2026-04-06T09:30:00.000Z" },
+    { "spotId": "mizu", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "バス1本で、湖畔は平坦でした。風がなくて写真が撮りやすいです。", "createdAt": "2026-04-18T10:05:00.000Z" },
+    { "spotId": "mizu", "season": "summer", "satisfaction": 5, "revisitIntent": true, "body": "船頭の渡しは短く、対岸の木陰が涼しかったです。桟橋に段差あり。", "createdAt": "2026-07-09T11:40:00.000Z" },
+    { "spotId": "mizu", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "昼は普通の混み方です。東屋に荷物を置いて往復できました。", "createdAt": "2026-08-14T12:15:00.000Z" },
+    { "spotId": "mizu", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "逆さの山が湖に入って見えました。午後でも歩きやすいです。", "createdAt": "2026-10-16T14:20:00.000Z" },
+    { "spotId": "mizu", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "所要45分で、湖を一周しなくても十分見られます。", "createdAt": "2026-11-01T13:50:00.000Z" },
+    { "spotId": "mizu", "season": "winter", "satisfaction": 4, "revisitIntent": true, "body": "甘酒が熱くて助かりました。東屋は風を避けにくいです。", "createdAt": "2026-01-18T11:25:00.000Z" },
+    { "spotId": "mizu", "season": "winter", "satisfaction": 3, "revisitIntent": false, "body": "バスの本数が少なく、待ち時間が長めです。", "createdAt": "2026-02-07T15:00:00.000Z" },
+
+    { "spotId": "kaza", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "菜の花弁当を丘の上で食べました。中腹のベンチで一休みできます。", "createdAt": "2026-04-12T12:00:00.000Z" },
+    { "spotId": "kaza", "season": "spring", "satisfaction": 3, "revisitIntent": false, "body": "坂と段差が多く、荷物が多い日はきつかったです。", "createdAt": "2026-04-27T12:40:00.000Z" },
+    { "spotId": "kaza", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "風車の影が長く、昼下がりでも少し休めます。午後は混みます。", "createdAt": "2026-07-22T14:10:00.000Z" },
+    { "spotId": "kaza", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "バスのあとの上りが本番です。水を持っていくと楽です。", "createdAt": "2026-08-05T13:35:00.000Z" },
+    { "spotId": "kaza", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "職人の羽根の手入れを、作業小屋から見られました。午前が空いています。", "createdAt": "2026-10-08T10:15:00.000Z" },
+    { "spotId": "kaza", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "小屋で休めて助かります。坂はありますが、見学の時間は短めです。", "createdAt": "2026-10-29T10:50:00.000Z" },
+    { "spotId": "kaza", "season": "winter", "satisfaction": 5, "revisitIntent": true, "body": "丘の上から町の灯が見えました。小屋で風を避けられます。", "createdAt": "2026-01-09T17:20:00.000Z" },
+    { "spotId": "kaza", "season": "winter", "satisfaction": 3, "revisitIntent": false, "body": "バスが少なく、日没前に降りた方が安心です。", "createdAt": "2026-02-16T16:05:00.000Z" },
+
+    { "spotId": "ishi", "season": "spring", "satisfaction": 5, "revisitIntent": true, "body": "石畳の案内歩きは予約なしで、港の入口から参加できました。", "createdAt": "2026-04-04T11:00:00.000Z" },
+    { "spotId": "ishi", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "路地の抜け道が面白く、茶店が点在して休めるのがよいです。", "createdAt": "2026-04-15T11:30:00.000Z" },
+    { "spotId": "ishi", "season": "summer", "satisfaction": 5, "revisitIntent": true, "body": "冷たい葛が路地で食べられます。夕方は混むので早めが楽です。", "createdAt": "2026-07-19T16:20:00.000Z" },
+    { "spotId": "ishi", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "段差は多いですが、港から徒歩圏で助かります。", "createdAt": "2026-08-01T16:45:00.000Z" },
+    { "spotId": "ishi", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "夕灯が石に反射してきれいです。夕方は人が増えます。", "createdAt": "2026-10-11T17:35:00.000Z" },
+    { "spotId": "ishi", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "短い距離で往復できるので、荷物が多くても回りやすいです。", "createdAt": "2026-10-22T17:00:00.000Z" },
+    { "spotId": "ishi", "season": "winter", "satisfaction": 5, "revisitIntent": true, "body": "小鍋の暖簾が出ていて、店内で温まれました。空いています。", "createdAt": "2026-01-12T18:10:00.000Z" },
+    { "spotId": "ishi", "season": "winter", "satisfaction": 4, "revisitIntent": true, "body": "ひとり分の小鍋で量もちょうどよいです。石畳は滑りやすいです。", "createdAt": "2026-02-04T18:25:00.000Z" },
+
+    { "spotId": "oto", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "窓を開けた練習日で、ロビーが明るかったです。午前は空いています。", "createdAt": "2026-04-07T10:40:00.000Z" },
+    { "spotId": "oto", "season": "spring", "satisfaction": 4, "revisitIntent": true, "body": "館内は平坦で、バス1本です。短時間の立ち寄りに向きます。", "createdAt": "2026-04-24T11:10:00.000Z" },
+    { "spotId": "oto", "season": "summer", "satisfaction": 5, "revisitIntent": true, "body": "ロビーの短い演奏を聴けました。夕方でも普通の混み方です。", "createdAt": "2026-07-13T18:00:00.000Z" },
+    { "spotId": "oto", "season": "summer", "satisfaction": 4, "revisitIntent": true, "body": "席を確保しなくても、立ち聞きで十分楽しめます。", "createdAt": "2026-08-09T18:20:00.000Z" },
+    { "spotId": "oto", "season": "autumn", "satisfaction": 5, "revisitIntent": true, "body": "栗の菓子が休憩に出て、ロビーでゆっくりできました。", "createdAt": "2026-10-14T14:40:00.000Z" },
+    { "spotId": "oto", "season": "autumn", "satisfaction": 4, "revisitIntent": true, "body": "所要40分で、高原の往復と組み合わせやすいです。", "createdAt": "2026-10-28T15:05:00.000Z" },
+    { "spotId": "oto", "season": "winter", "satisfaction": 5, "revisitIntent": true, "body": "雪の日は音が館の中に残ります。入口に段差があるので注意です。", "createdAt": "2026-01-17T13:20:00.000Z" },
+    { "spotId": "oto", "season": "winter", "satisfaction": 3, "revisitIntent": false, "body": "バスの本数が少なく、待ち時間を見ないと厳しいです。", "createdAt": "2026-02-20T14:00:00.000Z" }
+  ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>MataTabi</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <!-- 背景画像は人物や既存作品を参照しない、オリジナルの海辺の町。 -->
+  <div class="skyline" aria-hidden="true">
+    <img src="img/town.jpg" alt="">
+    <div class="skyline-shade"></div>
+  </div>
+  <div class="phone" id="phone">
+    <header class="topbar">
+      <h1>MataTabi</h1>
+      <button class="language-button" id="language-button" type="button" aria-haspopup="dialog" aria-expanded="false">言語を選択</button>
+    </header>
+    <main id="app"></main>
+    <nav class="bottom-nav" id="nav" aria-label="メインメニュー">
+      <button type="button" data-route="home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg>
+        <span>ホーム</span>
+      </button>
+      <button type="button" data-route="memories">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.4"/><path d="M9 6.5 10.2 4h3.6L15 6.5"/></svg>
+        <span>思い出</span>
+      </button>
+      <button type="button" data-route="discover">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m14.6 9.4-1.3 4.2-4.2 1.3 1.3-4.2z"/></svg>
+        <span>発見</span>
+      </button>
+      <button type="button" data-route="notices">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h10v14H6z"/><path d="M16 8h3v8a2 2 0 0 1-2 2h-1"/><path d="M8 9h6M8 12h6M8 15h4"/></svg>
+        <span>お知らせ</span>
+      </button>
+    </nav>
+  </div>
+  <div id="modal-root"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/sample-data.js"></script>
+  <script src="js/recommendation.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

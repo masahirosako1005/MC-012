@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "version": 1,
+    "synthetic": true,
+    "description": "再訪サジェスチョンの動作確認用に作成した匿名の合成データ。実在の旅行者や調査結果ではない。"
+  },
+  "travelers": [
+    {
+      "travelerId": "sample-001",
+      "style": {
+        "party": "solo",
+        "duration": "short",
+        "mobility": "low",
+        "interests": ["scenery", "nature"],
+        "crowd": "avoid"
+      },
+      "visits": [
+        { "spotId": "shio", "season": "spring", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "mizu", "season": "autumn", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "ishi", "season": "autumn", "reason": "season", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-002",
+      "style": {
+        "party": "couple",
+        "duration": "half",
+        "mobility": "medium",
+        "interests": ["food", "scenery"],
+        "crowd": "neutral"
+      },
+      "visits": [
+        { "spotId": "yoichi", "season": "spring", "reason": "food", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "todai", "season": "autumn", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "kaza", "season": "spring", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "shio", "season": "summer", "reason": "food", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-003",
+      "style": {
+        "party": "family",
+        "duration": "half",
+        "mobility": "low",
+        "interests": ["food", "events", "people"],
+        "crowd": "okay"
+      },
+      "visits": [
+        { "spotId": "yoichi", "season": "winter", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "oto", "season": "summer", "reason": "people", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "mizu", "season": "winter", "reason": "food", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-004",
+      "style": {
+        "party": "friends",
+        "duration": "full",
+        "mobility": "high",
+        "interests": ["nature", "events", "history"],
+        "crowd": "neutral"
+      },
+      "visits": [
+        { "spotId": "todai", "season": "spring", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "kaza", "season": "autumn", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "ishi", "season": "spring", "reason": "people", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "mizu", "season": "summer", "reason": "people", "satisfaction": 4, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-005",
+      "style": {
+        "party": "solo",
+        "duration": "full",
+        "mobility": "high",
+        "interests": ["history", "scenery", "nature"],
+        "crowd": "avoid"
+      },
+      "visits": [
+        { "spotId": "ishi", "season": "spring", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "todai", "season": "winter", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "shio", "season": "winter", "reason": "season", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "kaza", "season": "winter", "reason": "season", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-006",
+      "style": {
+        "party": "couple",
+        "duration": "short",
+        "mobility": "low",
+        "interests": ["scenery", "food"],
+        "crowd": "avoid"
+      },
+      "visits": [
+        { "spotId": "shio", "season": "spring", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "yoichi", "season": "autumn", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "oto", "season": "autumn", "reason": "food", "satisfaction": 4, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-007",
+      "style": {
+        "party": "family",
+        "duration": "full",
+        "mobility": "medium",
+        "interests": ["nature", "food", "events"],
+        "crowd": "okay"
+      },
+      "visits": [
+        { "spotId": "mizu", "season": "summer", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "kaza", "season": "spring", "reason": "food", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "yoichi", "season": "spring", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "todai", "season": "summer", "reason": "season", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-008",
+      "style": {
+        "party": "friends",
+        "duration": "half",
+        "mobility": "medium",
+        "interests": ["events", "people", "food"],
+        "crowd": "okay"
+      },
+      "visits": [
+        { "spotId": "yoichi", "season": "winter", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "oto", "season": "summer", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "ishi", "season": "summer", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "shio", "season": "autumn", "reason": "people", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-009",
+      "style": {
+        "party": "solo",
+        "duration": "half",
+        "mobility": "medium",
+        "interests": ["scenery", "history", "people"],
+        "crowd": "neutral"
+      },
+      "visits": [
+        { "spotId": "ishi", "season": "autumn", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "shio", "season": "autumn", "reason": "people", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "todai", "season": "spring", "reason": "people", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "oto", "season": "winter", "reason": "season", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-010",
+      "style": {
+        "party": "couple",
+        "duration": "full",
+        "mobility": "high",
+        "interests": ["nature", "scenery", "food"],
+        "crowd": "neutral"
+      },
+      "visits": [
+        { "spotId": "kaza", "season": "summer", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "mizu", "season": "autumn", "reason": "season", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "todai", "season": "autumn", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "yoichi", "season": "summer", "reason": "season", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-011",
+      "style": {
+        "party": "family",
+        "duration": "short",
+        "mobility": "low",
+        "interests": ["food", "nature"],
+        "crowd": "avoid"
+      },
+      "visits": [
+        { "spotId": "mizu", "season": "winter", "reason": "food", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "shio", "season": "summer", "reason": "food", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "yoichi", "season": "autumn", "reason": "food", "satisfaction": 3, "revisitIntent": false }
+      ]
+    },
+    {
+      "travelerId": "sample-012",
+      "style": {
+        "party": "friends",
+        "duration": "full",
+        "mobility": "high",
+        "interests": ["events", "history", "scenery"],
+        "crowd": "okay"
+      },
+      "visits": [
+        { "spotId": "oto", "season": "summer", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "ishi", "season": "spring", "reason": "people", "satisfaction": 5, "revisitIntent": true },
+        { "spotId": "kaza", "season": "autumn", "reason": "people", "satisfaction": 4, "revisitIntent": true },
+        { "spotId": "todai", "season": "summer", "reason": "season", "satisfaction": 4, "revisitIntent": false }
+      ]
+    }
+  ]
+}
